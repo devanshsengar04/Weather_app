@@ -1,0 +1,40 @@
+.body-container {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  height: 35px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+button {
+  padding: 8px 18px;
+  border-radius: 2rem;
+  background: #3d5a80;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #918d8d;
+}
+
+#map {
+  height: 60vh;
+  width: 100%;
+  border-radius: 15px;
+}

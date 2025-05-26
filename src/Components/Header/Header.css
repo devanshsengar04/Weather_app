@@ -1,0 +1,81 @@
+/* Base Header */
+.header {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  animation: rotateIcon 5s linear infinite;
+}
+
+/* NEW: Text container to stack heading and subtitle vertically with space */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px; /* spacing between title and subtitle */
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Theme Global */
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-theme .header {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+body.dark-theme .dark-mode-toggle {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+/* Icon Animation */
+@keyframes rotateIcon {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

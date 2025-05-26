@@ -1,0 +1,31 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 1rem;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+.main-content > .map-container {
+  flex: 3 1 70%;
+  max-width: 75%;
+}
+
+.main-content > .weather-card {
+  flex: 1 1 25%;
+  max-width: 350px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-content > * {
+    max-width: 100%;
+  }
+}
