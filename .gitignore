@@ -1,16 +1,19 @@
-# dependencies
-/node_modules
+# Dependency folders
+node_modules/
 
-# production build
-/build
+# Production build
+build/
 
-# environment variables
+# Environment variables
 .env
 
-# logs
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# misc
+# macOS
 .DS_Store
+
+# VS Code
+.vscode/
